@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <form action="complete.html" onsubmit="return myfunction()">
+        <center>
+        <fieldset style="text-align: center; width:300px">
+           
+           <h3> Student Form</h3
+        
+            <label>Name</label>
+            <input type="text" id="fullname" placeholder="Enter your name"><br><br>
+            <label>Class</label>
+            <input type="number" placeholder=" Enter your class" id="studentclass"><br><br>
+            <label>Division</label>
+            <input type="text" id="division" placeholder=" Enter your class division"><br><br>
+            <label>Gender</label>
+            <input type="radio" name="gender"  id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender"  id="gender">Other<br><br>
+            <label>Date of Birth</label>
+            <input type="date" id="dob"><br><br>
+            <button>Submit</button>
+        
+    </fieldset>
+    <center>
+
+    </form>
+    <script>
+        function myfunction(){
+            var fullname = document.getElementById("fullname");
+            var studentclass = document.getElementById("studentclass");
+            var division = document.getElementById("division");
+            var gender = document.getElementById("gender");
+            var dob = document.getElementById("dob");
+               if(fullname.value==""){
+                alert("Please enter your name");
+                    return false;
+                 };
+                 if(studentclass.value==""){
+                alert("Please enter your class");
+                    return false;
+                 };
+                 if(division.value==""){
+                alert("Please enter your division");
+                    return false;
+                 };
+                 if(gender.value==""){
+
+                alert(" select ");
+                    return false;
+                 };
+                if(dob.value==""){
+                alert("Please enter your date of birth");
+                    return false;
+                 };
+                 if(fullname ){
+                    let studentdetails= fullname.value ;
+                    alert("This is "+studentdetails );
+                }
+                 return true;
+                };
+                
+
+    </script>
+    
+    
+</body>
+
+</html>
+
+                    
